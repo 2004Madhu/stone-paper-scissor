@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<style>
+    .tit{
+        font-size: 70px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+    }
+    .btn{
+        background-color: gold;
+        color: black;
+        width: 125px;
+        margin-left: 50px;
+        height: 75px;
+        border-radius: 30px;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <p class="tit">Stone Paper Scissor</p>
+    <button class="btn" onclick="
+    let s=Math.random();
+    if(s>=0 && s<0.3)
+    {
+        alert('you have picked stone and the computer picked stone...YOU tied');
+    }else if(s>=0.31 && s<0.6)
+    {
+        alert('you have picked stone and the computer picked paper...YOU lost');
+    }else{
+        alert('you have picked stone and the computer picked Scissor...YOU won');
+    }
+    ">
+        Stone
+    </button>
+    <button class="btn" onclick="
+    let s=Math.random();
+    if(s>=0 && s<0.3)
+    {
+        alert('you have picked paper and the computer picked stone...YOU won');
+    }else if(s>=0.31 && s<0.6)
+    {
+        alert('you have picked paper and the computer picked paper...YOU tied');
+    }else{
+        alert('you have picked paper and the computer picked Scissor...YOU lost');
+    }">
+        Paper
+    </button>
+    <button class="btn" onclick="
+    let s=Math.random();
+    if(s>=0 && s<0.3)
+    {
+        alert('you have picked scissor and the computer picked stone...YOU lost');
+    }else if(s>=0.31 && s<0.6)
+    {
+        alert('you have picked scissor and the computer picked paper...YOU won');
+    }else{
+        alert('you have picked scissor and the computer picked Scissor...YOU tied');
+    }">
+        Scissor
+    </button>
+</body>
